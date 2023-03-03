@@ -15,6 +15,7 @@
 .env.test.local
 .env.production.local
 view.html
+index.html
 
 npm-debug.log*
 yarn-debug.log*
