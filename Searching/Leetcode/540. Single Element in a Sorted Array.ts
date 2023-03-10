@@ -1,9 +1,9 @@
-function singleNonDuplicate(nums) {
+function singleNonDuplicate(nums: number[]): number {
   let startIdx = 0;
   let endIdx = nums.length - 1;
 
   while (startIdx <= endIdx) {
-    const midIdx = startIdx + (endIdx - startIdx) / 2;
+    const midIdx = Math.floor((startIdx + endIdx) / 2);
     const prevIdx = midIdx - 1;
     const nextIdx = midIdx + 1;
 
@@ -24,5 +24,3 @@ function singleNonDuplicate(nums) {
 console.log(singleNonDuplicate([1, 1, 2, 3, 3, 4, 4, 5, 5]));
 console.log(singleNonDuplicate([3, 3, 7, 7, 10, 11, 11]));
 console.log(singleNonDuplicate([1, 1, 2, 2, 3]));
-
-console.log((5 / 2).toFixed());
