@@ -14,9 +14,7 @@ function targetIndices(nums: number[], target: number): number[] {
         indexes = [left_i, ...indexes];
         left_i = left_i - 1;
       }
-
       indexes.push(mid);
-
       while (nums[right_i] === target) {
         indexes.push(right_i);
         right_i = right_i + 1;
