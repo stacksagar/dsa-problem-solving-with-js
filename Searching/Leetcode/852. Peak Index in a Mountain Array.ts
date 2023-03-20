@@ -18,14 +18,3 @@ function peakIndexInMountainArray(arr: number[]): number {
 }
 
 console.log(peakIndexInMountainArray([18, 29, 38, 59, 98, 100, 99, 98, 90]));
-
-// console.log(peakIndexInMountainArray([0, 2, 1, 0]));
-// console.log(peakIndexInMountainArray([0, 10, 5, 2]));
-
-// console.log(
-//   peakIndexInMountainArray([2, 4, 6, 9, 32, 22, 20, 18, 13, 12, 8, 6, 2])
-// );
-
-// console.log(
-//   peakIndexInMountainArray([2, 4, 6, 9, 10, 11, 12, 18, 13, 12, 8, 6, 2])
-// );
