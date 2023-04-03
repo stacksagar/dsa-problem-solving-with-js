@@ -8,8 +8,8 @@ class Node {
 
 class DoublyLL {
   constructor(value) {
-    let newNode = new Node(value);
-    this.head = this.tail = newNode;
+    let node = new Node(value);
+    this.head = this.tail = node;
     this.length = 1;
   }
 }

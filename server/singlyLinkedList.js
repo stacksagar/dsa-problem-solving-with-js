@@ -12,15 +12,15 @@ class SinglyLinkedList {
   }
 
   append(data) {
-    const newNode = new Node(data);
+    const node = new Node(data);
     if (this.head === null) {
-      this.head = newNode;
+      this.head = node;
     } else {
       let current = this.head;
       while (current.next !== null) {
         current = current.next;
       }
-      current.next = newNode;
+      current.next = node;
     }
     this.length++;
   }
@@ -30,10 +30,10 @@ class SinglyLinkedList {
       return false;
     }
 
-    const newNode = new Node(data);
+    const node = new Node(data);
     if (position === 0) {
-      newNode.next = this.head;
-      this.head = newNode;
+      node.next = this.head;
+      this.head = node;
     } else {
       let current = this.head;
       let index = 0;
@@ -43,8 +43,8 @@ class SinglyLinkedList {
         current = current.next;
         index++;
       }
-      newNode.next = current;
-      previous.next = newNode;
+      node.next = current;
+      previous.next = node;
     }
     this.length++;
     return true;

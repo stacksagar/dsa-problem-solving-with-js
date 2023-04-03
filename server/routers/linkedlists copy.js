@@ -27,22 +27,22 @@ class LinkedList {
   }
 
   append(data) {
-    let newNode = new Node(data);
+    let node = new Node(data);
 
-    if (this.initialData(newNode)) return;
+    if (this.initialData(node)) return;
 
-    this.tail.next = newNode;
-    this.tail = newNode;
+    this.tail.next = node;
+    this.tail = node;
     this.size++;
   }
 
   prepend(data) {
-    const newNode = new Node(data);
+    const node = new Node(data);
 
-    if (this.initialData(newNode)) return;
+    if (this.initialData(node)) return;
 
-    newNode.next = this.head;
-    this.head = newNode;
+    node.next = this.head;
+    this.head = node;
     this.size++;
   }
 
@@ -54,16 +54,15 @@ class LinkedList {
 
     if (position === this.size) return this.append(data);
 
-    const newNode = new Node(data);
+    const node = new Node(data);
     let current = this.head;
-    let previous = null
+    let previous = null;
     let currentIndex = 0;
 
     while (currentIndex < position) {
       previous = current;
       current = current.next;
     }
-
   }
 }
 

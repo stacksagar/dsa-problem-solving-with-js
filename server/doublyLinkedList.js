@@ -14,14 +14,14 @@ class DoublyLinkedList {
   }
 
   append(data) {
-    const newNode = new Node(data);
+    const node = new Node(data);
     if (this.length === 0) {
-      this.head = newNode;
-      this.tail = newNode;
+      this.head = node;
+      this.tail = node;
     } else {
-      newNode.prev = this.tail;
-      this.tail.next = newNode;
-      this.tail = newNode;
+      node.prev = this.tail;
+      this.tail.next = node;
+      this.tail = node;
     }
     this.length++;
   }
@@ -31,20 +31,20 @@ class DoublyLinkedList {
       return false;
     }
 
-    const newNode = new Node(data);
+    const node = new Node(data);
     if (position === 0) {
       if (this.length === 0) {
-        this.head = newNode;
-        this.tail = newNode;
+        this.head = node;
+        this.tail = node;
       } else {
-        newNode.next = this.head;
-        this.head.prev = newNode;
-        this.head = newNode;
+        node.next = this.head;
+        this.head.prev = node;
+        this.head = node;
       }
     } else if (position === this.length) {
-      newNode.prev = this.tail;
-      this.tail.next = newNode;
-      this.tail = newNode;
+      node.prev = this.tail;
+      this.tail.next = node;
+      this.tail = node;
     } else {
       let current = this.head;
       let index = 0;
@@ -52,10 +52,10 @@ class DoublyLinkedList {
         current = current.next;
         index++;
       }
-      newNode.prev = current.prev;
-      newNode.next = current;
-      current.prev.next = newNode;
-      current.prev = newNode;
+      node.prev = current.prev;
+      node.next = current;
+      current.prev.next = node;
+      current.prev = node;
     }
     this.length++;
     return true;

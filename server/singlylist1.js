@@ -16,15 +16,15 @@ class LinkedList {
 
   // Add a new node to the end of the list
   append(value) {
-    const newNode = new ListNode(value);
+    const node = new ListNode(value);
 
     if (!this.head) {
       // If the list is empty
-      this.head = newNode;
-      this.tail = newNode;
+      this.head = node;
+      this.tail = node;
     } else {
-      this.tail.next = newNode;
-      this.tail = newNode;
+      this.tail.next = node;
+      this.tail = node;
     }
 
     this.length++;
@@ -32,15 +32,15 @@ class LinkedList {
 
   // Add a new node to the beginning of the list
   prepend(value) {
-    const newNode = new ListNode(value);
+    const node = new ListNode(value);
 
     if (!this.head) {
       // If the list is empty
-      this.head = newNode;
-      this.tail = newNode;
+      this.head = node;
+      this.tail = node;
     } else {
-      newNode.next = this.head;
-      this.head = newNode;
+      node.next = this.head;
+      this.head = node;
     }
 
     this.length++;
@@ -62,7 +62,7 @@ class LinkedList {
       return;
     }
 
-    const newNode = new ListNode(value);
+    const node = new ListNode(value);
     let current = this.head;
     let previous = null;
     let currentIndex = 0;
@@ -73,8 +73,8 @@ class LinkedList {
       currentIndex++;
     }
 
-    previous.next = newNode;
-    newNode.next = current;
+    previous.next = node;
+    node.next = current;
 
     this.length++;
   }
