@@ -43,6 +43,7 @@ class LinkedList {
 
     node.next = this.head;
     this.head = node;
+
     this.size++;
   }
 
