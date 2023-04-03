@@ -21,4 +21,5 @@ class MyStack {
 
   empty() {}
 }
+
 const myStack = new MyStack();
