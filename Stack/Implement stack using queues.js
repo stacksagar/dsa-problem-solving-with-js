@@ -18,6 +18,7 @@ class MyStack {
   pop() {}
 
   top() {}
+
   empty() {}
 }
 
