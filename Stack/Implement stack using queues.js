@@ -14,10 +14,10 @@ class MyStack {
   }
 
   push(value) {}
+
   pop() {}
   top() {}
   empty() {}
 }
 
 const myStack = new MyStack();
-  
