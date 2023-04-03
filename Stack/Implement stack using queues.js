@@ -16,6 +16,7 @@ class MyStack {
   push(value) {}
 
   pop() {}
+
   top() {}
   empty() {}
 }
