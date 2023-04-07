@@ -39,6 +39,7 @@ class HashTable {
 const table = new HashTable(5);
 
 table.set(10);
+
 table.set({
   id: "10",
   phone: "01797177287",
