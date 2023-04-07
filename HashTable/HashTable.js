@@ -44,15 +44,10 @@ table.set({
   phone: "01797177287",
 });
 
-table.set({
-  id: "50",
-  phone: "01797177287",
-});
-
 console.log(table.table[0]);
 console.log(table.table[1]);
 console.log(table.table[2]);
-
 console.log(table.table[3]);
 console.log(table.table[4]);
+
 console.log(table.get(10));
