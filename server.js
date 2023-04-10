@@ -7,7 +7,6 @@ app.get("/health", (req, res) => {
 });
 
 app.use("/LinkedLists", l_list);
-
 app.listen(1000, () => {
   console.log("Server running");
 });
