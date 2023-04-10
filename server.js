@@ -2,7 +2,7 @@ import express from "express";
 import l_list from "./server/routers/linkedlists.js";
 const app = express();
 
-app.get("/health", (req, res) => {
+app.get("/health", (_req, res) => {
   res.json({ message: "ok", data: {} });
 });
 
