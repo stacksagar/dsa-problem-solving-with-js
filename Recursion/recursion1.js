@@ -4,3 +4,4 @@ function demo(n) {
 }
 
 demo(1);
+demo(2);
