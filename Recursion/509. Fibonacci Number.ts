@@ -10,5 +10,3 @@ function fib(n: number): any {
   const val = fib(n - 1) + fib(n - 2);
   return val;
 }
-
-console.log(fib(4));
